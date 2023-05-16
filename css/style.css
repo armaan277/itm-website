@@ -505,17 +505,21 @@ ul li .nav-link-ltr:hover::before {
 /* item-7 END Styles in CSS */
 
 /* item-8 START Styles in CSS */
-#item-8 .container h1 {
+#item-8 {
+  margin-top: 3rem;
+}
+
+.container .item-8-h1 {
   color: #df3333;
   font-weight: 600;
 }
 
-#item-8 .container .container-para-1 {
+.container .container-para-1 {
   font-size: 2rem;
   text-align: justify;
 }
 
-#item-8 .container .container-para-2 {
+.container .container-para-2 {
   font-size: 1.4rem;
   text-align: justify;
 }
