@@ -672,7 +672,25 @@ background-color: whitesmoke;
   font-family: var(--font-family);
 }
 
+#item-12 .anchor-btn {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  background-color: #ca0401;
+  border-radius: 0.2rem;
+  color: white;
+}
+
+#item-12 .anchor-btn:hover {
+  background-color: #cd2122;
+  color: #fff;
+}
+
 #item-12 a:hover {
   color: red;
+}
+
+#item-12 .lead {
+  text-align: justify;
+  padding-top: 0.8rem;
 }
 /* item-12 END Styles in CSS */
