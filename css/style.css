@@ -611,10 +611,12 @@ ul li .nav-link-ltr:hover::before {
 
 .item-10-container-1 .container-1-para-1 {
   font-family: var(--font-family);
-  padding: 0 0 0 3rem;
+  margin: 0.5rem 3rem;
+  /* padding: 0 0 0 3rem;  */
   font-size: 1rem;
   color: black;
   font-weight: 600;
+  text-align: justify;
 }
 
 .number-contain h1 {
@@ -655,15 +657,14 @@ ul li .nav-link-ltr:hover::before {
   height: 600px;
 } */
 
-
 /* item-12 START Styles in CSS */
 #item-12 {
-background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 #item-12 em {
   font-family: var(--font-family);
-  font-size: 0.9rem; 
+  font-size: 1.1rem;
 }
 
 #item-12 a {
@@ -674,7 +675,7 @@ background-color: whitesmoke;
 
 #item-12 .anchor-btn {
   font-size: 0.9rem;
-  padding: 6px 12px;
+  padding: 6px 14px;
   background-color: #ca0401;
   border-radius: 0.2rem;
   color: white;
@@ -692,5 +693,10 @@ background-color: whitesmoke;
 #item-12 .lead {
   text-align: justify;
   padding-top: 0.8rem;
+  font-size: 1.4rem;
+}
+
+#item-12 .row-featurettes2 {
+  margin: 6rem 0px !important;
 }
 /* item-12 END Styles in CSS */
