@@ -657,9 +657,49 @@ ul li .nav-link-ltr:hover::before {
   height: 600px;
 } */
 
+/* item-11 START Styles in CSS */
+#item-11 {
+  background-color: #f5f5f5;
+}
+
+#item-11 h1 {
+  color: #df3333;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3rem 0;
+  font-size: 2.8rem;
+}
+
+#item-11 .container-fluid {
+  padding-top: 1rem;
+}
+#item-11 .container-fluid .card-four {
+  background-color: lightgray;
+}
+
+#item-11 .view-anchor-btn {
+  padding: 7px 18px;
+  background-color: #ca0401;
+  border-radius: 0.2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+#item-11 .view-anchor-btn:hover {
+  background-color: #cd2122;
+  color: #fff;
+}
+/* item-11 END Styles in CSS */
+
 /* item-12 START Styles in CSS */
 #item-12 {
   background-color: whitesmoke;
+}
+
+#item-12 h1 {
+  color: #df3333;
+  font-weight: 600;
+  font-size: 2.8rem !important;
 }
 
 #item-12 em {
@@ -700,3 +740,17 @@ ul li .nav-link-ltr:hover::before {
   margin: 6rem 0px !important;
 }
 /* item-12 END Styles in CSS */
+
+/* item-13 START Styles in CSS */
+#item-13 {
+  background-color: whitesmoke;
+}
+
+#item-13 h1 {
+  color: #df3333;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3rem 0;
+  font-size: 2.8rem;
+}
+/* item-13 END Styles in CSS */

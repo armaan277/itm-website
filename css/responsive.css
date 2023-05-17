@@ -290,6 +290,32 @@
 
 /* item-10 END Media Queries */
 
+/* item-11 START Media Queries */
+@media only screen and (max-width: 1055px) {
+  #item-11 .container-fluid .card-four {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  #item-11 .container-fluid {
+    margin-top: -3rem;
+  }
+
+  #item-11 .container-fluid .card-one {
+    margin-top: 4rem;
+  }
+
+  #item-11 .container-fluid .card-two {
+    margin-top: 4rem;
+  }
+
+  #item-11 .container-fluid .card-three {
+    margin-top: 4rem;
+  }
+}
+/* item-11 END Media Queries */
+
 /* item-12 START Media Queries */
 @media only screen and (max-width: 1200px) {
   #item-12 img {
@@ -331,11 +357,45 @@
   #item-12 img {
     height: 240px !important;
     width: 100% !important;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  #item-12 .item12-reverse {
+    flex-wrap: wrap-reverse !important;
   }
 }
-
 /* item-12 END Media Queries */
+
+/* item-13 START Media Queries */
+@media only screen and (max-width: 1053px) {
+  #item-13 .container-fluid .card-four {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 799px) {
+  #item-13 h1 {
+    font-size: 1.8rem;
+  }
+
+  #item-13 .container-fluid {
+    margin-top: -3rem;
+  }
+
+  #item-13 .container-fluid .card-one {
+    margin-top: 4rem;
+  }
+
+  #item-13 .container-fluid .card-two {
+    margin-top: 4rem;
+  }
+
+  #item-13 .container-fluid .card-three {
+    margin-top: 4rem;
+  }
+  #item-13 .container-fluid .card-four {
+    margin-top: 4rem;
+  }
+}
+/* item-13 END Media Queries */
 
 /* https://itassetmanagement.in/ */
 
@@ -512,5 +572,24 @@
     width: 100%;
     margin: auto;
   }
+
   /* ITEM-10 END MOBILE SIZE */
+
+  /* ITEM-11 START MOBILE SIZE */
+  #item-11 h1 {
+    font-size: 2.2rem;
+  }
+  /* ITEM-11 END MOBILE SIZE */
+
+  /* ITEM-12 START MOBILE SIZE */
+  #item-12 h1 {
+    font-size: 2.2rem !important;
+  }
+  /* ITEM-12 END MOBILE SIZE */
+
+  /* ITEM-12 START MOBILE SIZE */
+  #item-13 h1 {
+    font-size: 1.4rem !important;
+  }
+  /* ITEM-12 END MOBILE SIZE */
 }
