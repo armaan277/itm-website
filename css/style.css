@@ -492,24 +492,54 @@ ul li .nav-link-ltr:hover::before {
 }
 /* item-5 END Styles in CSS */
 
-
 /* item-6 START Styles in CSS */
 #item-6 {
   background-image: url("../images/item-6-img1.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   height: 600px;
 }
 
-/* .item-6-contain {
-  background-color: #f5f5f5;
-  height: 600px;
-} */
+#item-6 .item6-h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+#item-6 .img-fluid {
+  display: block;
+  margin: auto;
+}
+
+#item-6 .item6-btn1 {
+  display: block;
+  margin: auto;
+  padding: 8px 100px;
+  border: none;
+  background-color: #ca0401;
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+#item-6 .item6-btn1:hover {
+  opacity: 0.8;
+}
+
+#item-6 .item6-btn2 {
+  display: block;
+  margin: auto;
+  padding: 8px 100px;
+  border: none;
+  background-color: black;
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+#item-6 .item6-btn2:hover {
+  opacity: 0.8;
+}
 /* item-6 END Styles in CSS */
-
-
 
 /* item-7 START Styles in CSS */
 /* .item-7-play-button {
@@ -765,46 +795,92 @@ ul li .nav-link-ltr:hover::before {
 }
 /* item-13 END Styles in CSS */
 
-
 /* item-14 START Styles in CSS */
 
-#item-14{
+#item-14 {
   background-color: #f5f5f5;
- }
- 
- #item-14 .btn-item-14 {
-   background-color: #ca0401;
-   padding: 8px 36px;
-   border: none;
-   color: white;
-   font-family: var(--font-family);
-   font-weight: 600;
-   border-radius: 5px;
- }
- 
- #item-14 .btn-item-14:hover {
-   background-color: #cd2122;
-   font-weight: 600;
- }
- 
- #item-14 h1 {
-   color: #df3333;
-   font-weight: 600;
- font-size: 3rem;
-   text-transform: uppercase;
-   margin: 3rem 0;
- }
+}
+
+#item-14 .btn-item-14 {
+  background-color: #ca0401;
+  padding: 8px 36px;
+  border: none;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#item-14 .btn-item-14:hover {
+  background-color: #cd2122;
+  font-weight: 600;
+}
+
+#item-14 h1 {
+  color: #df3333;
+  font-weight: 600;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 3rem 0;
+}
 /* item-14 END Styles in CSS */
 
-.form-control-lg::placeholder{
+
+/* item-15 START Styles in CSS */
+#item-15{
+  background-color: #f5f5f5;
+ }
+
+#item-15 h1 {
+  color: #df3333;
+  font-weight: 600;
+font-size: 2rem;
+  text-transform: uppercase;
+  margin: 3rem 0;
+}
+/* item-15 END Styles in CSS */
+
+/* item-16 START Styles in CSS */
+#item-16 {
+  background-color: whitesmoke;
+}
+
+#item-16 .btn-item-16 {
+  padding: 13px 80px;
+  border: 2px solid #df3333;
+  color: #ca0401;
+  font-family: sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+} 
+
+#item-16 .btn-item-16:hover {
+  background-color: #cd2122;
+  color: white;
+}
+
+#item-16 h2{
+  color: #df3333;
+}
+
+#item-16 .item-16-btn{
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+/* item-16 END Styles in CSS */
+
+.form-control-lg::placeholder {
   font-size: 1rem;
   font-family: var(--font-family);
 }
 
-label{
+label {
   font-family: var(--font-family);
 }
 
-textarea::placeholder{
+textarea::placeholder {
   font-family: var(--font-family);
 }

@@ -234,6 +234,44 @@
 }
 /* item-3 END Media Queries */
 
+/* item-6 START Media Queries */
+@media only screen and (max-width: 788px) {
+  #item-6 .container-fluid {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+  #item-6 .item6-h1 {
+    font-size: 2.4rem;
+  }
+  #item-6 .item6-btn1 {
+    padding: 8px 60px;
+    font-size: 1rem;
+  }
+  #item-6 .item6-btn2 {
+    padding: 8px 60px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 586px) {
+  #item-6 {
+    height: 860px !important;
+  }
+  #item-6 .item6-h1 {
+    font-size: 2.8rem;
+  }
+  #item-6 .item6-btn1 {
+    padding: 8px 76px;
+    font-size: 1rem;
+  }
+  #item-6 .item6-btn2 {
+    padding: 8px 84px;
+    font-size: 1rem;
+  }
+}
+
+/* item-6 END Media Queries */
+
 /* item-8 START Media Queries */
 @media only screen and (max-width: 767px) {
   .container h1 {
@@ -395,6 +433,41 @@
   }
 }
 /* item-13 END Media Queries */
+
+
+
+
+/* item-15 START Media Queries */
+@media only screen and (max-width: 546px) {
+#item-15 h1{
+  font-size: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 410px) {
+  #item-15 h1{
+    font-size: 1.2rem;
+  }
+  }
+/* item-15 END Media Queries */
+
+
+/* item-16 START Media Queries */
+@media only screen and (max-width: 991px) {
+  
+  #item-16 .item-16-btn{
+    margin-top: 3rem;
+  }
+  
+  }
+  
+  @media only screen and (max-width: 410px) {
+    #item-15 h1{
+      font-size: 1.2rem;
+    }
+    }
+  /* item-16 END Media Queries */
+
 
 /* https://itassetmanagement.in/ */
 
