@@ -825,16 +825,15 @@ ul li .nav-link-ltr:hover::before {
 }
 /* item-14 END Styles in CSS */
 
-
 /* item-15 START Styles in CSS */
-#item-15{
+#item-15 {
   background-color: #f5f5f5;
- }
+}
 
 #item-15 h1 {
   color: #df3333;
   font-weight: 600;
-font-size: 2rem;
+  font-size: 2rem;
   text-transform: uppercase;
   margin: 3rem 0;
 }
@@ -853,19 +852,18 @@ font-size: 2rem;
   font-weight: 600;
   border-radius: 5px;
   text-decoration: none;
-} 
+}
 
 #item-16 .btn-item-16:hover {
   background-color: #cd2122;
   color: white;
 }
 
-#item-16 h2{
+#item-16 h2 {
   color: #df3333;
 }
 
-#item-16 .item-16-btn{
-
+#item-16 .item-16-btn {
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -884,3 +882,37 @@ label {
 textarea::placeholder {
   font-family: var(--font-family);
 }
+
+/* item-17 START Styles in CSS */
+
+#item-17 {
+  background-color: #2f2f2f;
+  color: white;
+}
+
+.item-17-container-1-para-1 {
+  width: 300px;
+  line-height: 1.8;
+  font-family: var(--font-family);
+  text-align: justify;
+}
+
+.item-17-container-2 p {
+  line-height: 0.8;
+  font-family: var(--font-family);
+  text-align: justify;
+}
+
+.item-17-container-3 p {
+  line-height: 0.8;
+  font-family: var(--font-family);
+}
+
+.item-17-container-1 {
+  width: 300px;
+}
+
+.item-17-container-3 {
+  width: 320px;
+}
+/* item-17 END Styles in CSS */

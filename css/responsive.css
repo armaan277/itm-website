@@ -434,40 +434,33 @@
 }
 /* item-13 END Media Queries */
 
-
-
-
 /* item-15 START Media Queries */
 @media only screen and (max-width: 546px) {
-#item-15 h1{
-  font-size: 1.5rem;
-}
+  #item-15 h1 {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 410px) {
-  #item-15 h1{
+  #item-15 h1 {
     font-size: 1.2rem;
   }
-  }
+}
 /* item-15 END Media Queries */
-
 
 /* item-16 START Media Queries */
 @media only screen and (max-width: 991px) {
-  
-  #item-16 .item-16-btn{
+  #item-16 .item-16-btn {
     margin-top: 3rem;
   }
-  
-  }
-  
-  @media only screen and (max-width: 410px) {
-    #item-15 h1{
-      font-size: 1.2rem;
-    }
-    }
-  /* item-16 END Media Queries */
+}
 
+@media only screen and (max-width: 410px) {
+  #item-15 h1 {
+    font-size: 1.2rem;
+  }
+}
+/* item-16 END Media Queries */
 
 /* https://itassetmanagement.in/ */
 
@@ -667,4 +660,11 @@
     font-size: 1.4rem !important;
   }
   /* ITEM-12 END MOBILE SIZE */
+}
+
+/* FOOTER MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+  #item-17 p {
+    font-size: 1rem !important;
+  }
 }
