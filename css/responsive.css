@@ -189,7 +189,7 @@
 /* item-3 START Media Queries */
 @media only screen and (max-width: 1199px) {
   #item-3 {
-    height: 2140px;
+    height: 2200px;
   }
   #item-3 .last {
     margin-top: 6rem !important;
@@ -205,13 +205,13 @@
     margin: 1rem 0px !important;
   }
   #item-3 {
-    height: 2000px;
+    height: 2040px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   #item-3 {
-    height: 3540px;
+    height: 3570px;
   }
   #item-3 .card {
     margin: 1rem 0px !important;
@@ -220,19 +220,108 @@
 
 @media only screen and (max-width: 575px) {
   #item-3 {
-    height: 2000px;
+    height: 2020px;
   }
 }
 
 @media only screen and (max-width: 541px) {
   #item-3 {
-    height: 3540px;
+    height: 3560px;
   }
   #item-3 .mobileapp-card {
     margin: 3rem 0px;
   }
 }
 /* item-3 END Media Queries */
+
+/* item-4 START Media Queries */
+@media only screen and (max-width: 1210px) {
+  #item-4 .container{
+    height: 240px;
+    width: 1000px !important;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  #item-4 .container{
+    height: 260px;
+    width: 800px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #item-4 .container{
+    height: 200px;
+    width: 700px !important;
+  }
+  #item-4 .item4-para1 {
+    font-size: 1.2rem;
+  }
+  
+  #item-4 .item4-para2 {
+    font-size: 0.8rem;
+    font-family: var(--font-family);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #item-4 .container{
+    height: 260px;
+  }
+  #item-4 .item4-btn1 {
+    padding: 6px 30px;
+  }
+  
+  #item-4 .item4-btn2 {
+    padding: 7px 20px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #item-4 .container{
+    height: 240px;
+    width: 400px !important;
+  }
+  #item-4 .item4-para1 {
+    font-size: 0.8rem;
+  }
+  #item-4 .item4-para2 {
+    font-size: 0.7rem;
+  }
+  #item-4 .item4-btn1 {
+    padding: 5px 24px;
+  }
+  
+  #item-4 .item4-btn2 {
+    padding: 6px 18px;
+  }
+}
+
+@media only screen and (max-width: 474px) {
+  #item-4 .container{
+    height: 220px;
+    width: 300px !important;
+  }
+  #item-4 .item4-para1 {
+    font-size: 0.6rem;
+  }
+  #item-4 .item4-para2 {
+    font-size: 0.7rem;
+  }
+  #item-4 .item4-btn1 {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+  #item-4 .item4-btn2 {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/* item-4 END Media Queries */
+
+
+
 
 /* item-6 START Media Queries */
 @media only screen and (max-width: 788px) {
@@ -666,5 +755,5 @@
 @media only screen and (max-width: 992px) {
   #item-17 p {
     font-size: 1rem !important;
-  }
+  } 
 }
