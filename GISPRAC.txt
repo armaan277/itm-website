@@ -1,3 +1,5 @@
+https://drive.google.com/drive/folders/1tIoxdJBFyeoIrXcsxYjL2MSn0yKE5wC-
+
 Practical 1:-a,b,c Creating and Managing Vector Data: Adding vector layers, setting properties, formatting,  
 
 Layer -> Crate Layer -> New Shapefile Layer... -> open window -> file name = Vikroli.shp ->
