@@ -1,0 +1,134 @@
+Practical 1:-a,b,c Creating and Managing Vector Data: Adding vector layers, setting properties, formatting,  
+
+Layer -> Crate Layer -> New Shapefile Layer... -> open window -> file name = Vikroli.shp ->
+Geometry Type = Plygon -> New Filed -> Name = Name Heat Enter -> OK.
+
+Layer -> Crate Layer -> New Shapefile Layer... -> open window -> file name = roads.shp ->
+Geometry Type = Line -> New Filed -> Name = Name Heat Enter -> OK.
+
+Layer -> Crate Layer -> New Shapefile Layer... -> open window -> file name = hospital.shp ->
+Geometry Type = Point -> New Filed -> Name = Name Heat Enter -> OK.
+
+
+1.d) calculating line lengths and statistics
+Step 1:-
+Layer -> Add Layer -> Add Vector Layer -> ... go and select IND_rails.shp select -> add -> close.
+
+Step 2:-
+Layer -> Add Layer -> Add Vector Layer -> ... go and select india boundry IND_adm0.shp select -> add -> close.
+We need only the border of IND_adm0.shp, so we can go in Symbology and select 
+Outline blue -> Apply -> OK.
+
+Step 3:-
+Right click in IND_rails -> select open attribute table -> select open field calculator -> filed name = route_len, filed type = Decimal number(real), precision = 2, -> select Geometry -> Expression = $length / 1000. -> OK. 
+Whatever changes we are done then click save edits.
+
+Step 4:- Menu Bar Click Vector -> Analysis tools -> Basic Statistic for Fileds
+-> open window IL = IND_rails -> Field to calculate Statistics on = route_len->
+Save  to file is optional -> Run -> close.
+
+Step 5:- Click into html file -> In this practical we are calculating the railways route length -> sum is 60479.32000000014.
+
+
+Practical No :- 2. Exploring and Managing Raster data: Adding raster layers, raster styling and analysis, raster mosaicking and clipping
+
+a) Adding raster layers :-
+Layer -> Add Layer -> Add Raster Layer -> ... go and select glds90ag60.asc file select -> add -> close.
+
+Layer -> Add Layer -> Add Raster Layer -> ... go and select glds00ag60.asc file select -> add -> close.
+
+b) raster styling and analysis :-
+Right click in Layers glds90ag60.asc -> Symbology -> Render T = Singleband pesudocolor, min 0, max 240, Interpolation = Linear, Click Classify, Mode = Contious -> apply -> ok.
+
+Same Step glds00ag60.asc :-
+Right click in Layers glds90ag60.asc -> Symbology -> Render T = Singleband pesudocolor, min 0, max 240, Interpolation = Linear, Click Classify, Mode = Contious -> apply -> ok.
+
+Next Part is Analysis :-
+In Menu Bar Click in Rater -> Raster Calculator -> open window output_layer = population_difference click in ... save to file -> Expression = glds00ag60.asc -glds90ag60.asc -> Output CRS = Project CRS: EPSG - WGS 84 -> click ok.
+
+Both layers is to disselect.
+
+Only Click population_difference 
+Right click in Layers population_difference  -> Symbology -> Render T = Singleband pesudocolor, min -20000, max 6000, Interpolation = Discreate, Click Classify, Mode = Contious -> apply -> ok.
+All Values Are remove = -20000 = No Data, -10 = Negative Data, 10 = Neutral Data, 6000 = Positive Data -> Color ramp = turbo optional -> Apply -> OK.
+
+Click i symbol -> Check Population Vlaue.
+
+c) raster mosaicking and clipping
+Mosaicking means combination or merge of two or more images.
+Step 1:-
+Layer -> Add Layer -> Add Raster Layer -> ... go and select 4images select -> add -> close.
+
+Step 2:-
+In Menu Bar Click in Rater -> Miscellaneous -> Merge -> IL ... = Select All ->RUN -> Close.
+
+Only Merge Layer Select Baaki Disselect.
+
+Layer -> Add Layer -> Add Vector Layer -> ... go and select IND_rails.shp select -> add -> close.
+We need only boundry, so we go in symbolgy and select the Outlin Border.
+
+step 3:-
+In Menu Bar Click in Rater -> Extraction -> Clip Raster by Mask Layer -> Open Window -> IL = MERGED[EPSG:4326], Mask Layer = IND_adm0[EPSG:4326] -> RUN.
+
+
+Practical No:- 5 Working with attributes, terrain Data 
+a) Working with attributes
+Layer -> Add Layer -> Add Vector Layer -> ... go and select ne_10m_populated_places_simple(zip) select -> add -> close.
+
+Right click in ne_10m_populated_places_simple -> select open attribute table ->
+click pop_max -> then click select features and expression -> open window -> 
+then write expression -> pop_max > 100 and pop_max < 1000 -> then click it into select features -> close.
+
+b) terrain Data 
+What is Terrain Data:-
+Terrain is used in Geogrphy, Terrain means geographical surface
+Eg-> elevation,mountains, etc.
+
+Step 1:-
+Layer -> Add Layer -> Add Raster Layer -> ... go and select 10n060_20101117_gmted_mea300.TIF select -> add -> close.
+
+Then in bottom set Coordinate=86.92,27.98, Scale=900000, M=100%
+
+In Menu Bar Click in Rater -> Extraction -> clip Raster by Extent -> IL By default set that is 10n060_20101117_gmted_mea300.TIF[EPSG:4326], Clipping Extent = ...Use Map Canvas Extent -> Clipped (extent) Save the file = clippedhimalaya.tif -> RUN.
+
+Only Select clippedhimalaya layers:-
+In Menu Bar Click in Rater -> Extraction -> countor -> open widow ->  interval=100, go down Contours = Save to file = contourhimalaya -> RUN -> close.
+
+Then go in symbology -> Labels show in red color.
+In Menu Bar Click in Rater -> Analysis -> Hillshade -> IL = clippedhimalya, by all values are set -> Hillshade save to file = hillshade -> RUN.
+
+Practical No 6:- Working with Projections and WMS Data 
+WMS stand for  Web Map Service (WMS) is a standard protocol developed by GIS.
+
+Step 1:-
+Layer -> Add Layer -> Add Vector Layer -> ... go and select ne_10_admin_0_countries(zip) select -> add -> close.
+
+Step 2:-
+In menu bar click Layer -> Save as -> Open Window -> Format = ESRI Shapefile -> File name = Map1, CRS = ESRI:102008-North_America_Equal_Area_Conic -> OK -> then open another window -> OK.
+
+Only Select Map1 Layers;
+
+Step 3:-
+Layer -> Add Layer -> Add Raster Layer -> ... go and select MiniScale_(standard)_R17 select -> add -> close.
+
+Step 4:-
+In menu bar go in projects properties -> CRS tab -> Search British National Grid select -> Apply -> OK.
+
+
+Practical No 10a:- Advance GIS Operations 2: Batch Processing using Processing Framework:-
+Batch Processing means to execute a single tool multiple times with different inputs without your intervention.
+
+Step 1:-
+Layer -> Add Layer -> Add Vector Layer -> ... go and select ne_10_admin_0_countries.shp select -> add -> close.
+
+Step 2:-
+In menu bar Vector -> Geoprocessing Tools -> Dissolve -> Open Window -> 
+IL = by default set, Dissolve = ...click select continents ok -> Save to file =
+continents.shp file name -> RUN -> Close.
+
+In Menu Bar Clicked in Select by fearues then select only the africa continents.
+
+Then in continents layer right click -> then go in Export -> Save Selected Features As... -> Open Window -> File name... = africa.shp -> ok left baju me chack box tick karna hai -> OK.
+
+Select only Africa Layers:-
+In menu bar Processing -> Toolbox -> click vector overlay -> Clip in Right Click Exexute as Batch Process -> Select Three files -> airpots.shp,ports.shp,rail_roads.shp -> In Second We select africa.shp -> Then last option Clipped -> Save to file = clipped.shp -> After save open a window -> Fill with parameters values -> OK -> Tick Mark in Chackbox... -> RUN -> Close. 
